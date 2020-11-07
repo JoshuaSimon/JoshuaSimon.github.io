@@ -47,9 +47,9 @@ section.Counter, section.Names {
 }
 
 // Mobile screens
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     body {
-        height: 80%;
+        padding-top: 10em;
+        padding-bottom: 21em; 
     }
-    
 }

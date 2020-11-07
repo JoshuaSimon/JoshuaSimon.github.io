@@ -41,9 +41,10 @@ section.Counter p, section.Names p {
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   body {
-    height: 80%;
+    padding-top: 10em;
+    padding-bottom: 21em;
   }
 }
 /*# sourceMappingURL=main.css.map */
