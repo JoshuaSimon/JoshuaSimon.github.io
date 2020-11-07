@@ -40,4 +40,10 @@ section.Counter p, section.Names p {
   margin-bottom: 0;
   text-align: center;
 }
+
+@media only screen and (max-width: 800px) {
+  body {
+    height: 80%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

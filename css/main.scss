@@ -45,3 +45,11 @@ section.Counter, section.Names {
         text-align: center;
     }
 }
+
+// Mobile screens
+@media only screen and (max-width: 800px) {
+    body {
+        height: 80%;
+    }
+    
+}
