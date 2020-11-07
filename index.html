@@ -4,31 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Joshua Simon</title>
+    <title>Ilea & Joshua</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     
     <header>
+        <!-- 
         <a href="index.html" class=logo>Joshua Simon</a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
-        </nav>
+        </nav>-->
     </header>
+    
 
     <div class="wrapper">
 
-        <section class="Music">
-            <h1>Music</h1>
-
+        <section class="Names">
+            <h1> ILEA & JOSHUA </h1>
         </section>
 
-        <section class="Mathematics">
-            <h1>Mathematics</h1>
+        <section class="Counter">
+            <!-- Display the countdown timer in an element -->
+            <p></p>
+            <h2 id="demo"></h2>
 
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Nov 13, 2020 18:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "<3";
+                }
+            });
+            </script>
         </section>
 
     </div>

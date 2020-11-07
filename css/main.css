@@ -1,1 +1,42 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Playfair Display';
+  text-align: center;
+  padding-top: 15em;
+  padding-bottom: 15em;
+  background: url("../img/background_mountain_min_v2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.Counter h1, section.Names h1 {
+  color: white;
+  letter-spacing: 0.5rem;
+  padding-top: 5em;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+section.Counter h2, section.Names h2 {
+  color: white;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.0rem;
+}
+
+section.Counter p, section.Names p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
