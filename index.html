@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="KeyWords" content="JavaScript, DHTML, Animation, Fireworks, 4th July, independence day, Guy Fawkes, November 5th">  
     <title>Ilea & Joshua</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +25,32 @@
             </ul>
         </nav>-->
     </header>
-    
+
+
+    <body onload="showFirework()"></body>
+
+
+    <div class="pyro" id="fireworkID">
+        <div class="before"></div>
+        <div class="after"></div>
+
+        <script>
+            function showFirework() {
+                var x = document.getElementById("fireworkID");
+                //var y = document.getElementsByClassName("wrapper")
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    document.getElementById("demo").innerHTML = "HAPPY BIRTHDAY ILEA!";
+                    document.getElementById("btn").innerHTML = "PARTY VERLASSEN..."
+                } else {
+                    x.style.display = "none";
+                    document.getElementById("demo").innerHTML = "<3";
+                    document.getElementById("btn").innerHTML = "GEBURTSTAG FEIERN!"
+                }
+                
+            }
+        </script>
+    </div>
 
     <div class="wrapper">
 
@@ -66,6 +95,14 @@
             });
             </script>
         </section>
+
+        <button id="btn" type="button" onClick="showFirework()" > GEBURTSTAG FEIERN!</button>
+        <!-- 
+        <A HREF="#" onClick="myFW1.stop();myFW2.stop();myFW3.stop();myFW4.stop();return false;">STOP</A><br>
+        <A HREF="#" onClick="myFW1.start();myFW2.start();myFW3.start();myFW4.start();return false;">START</A><br>
+        -->
+
+        
 
     </div>
 
