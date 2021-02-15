@@ -60,6 +60,7 @@ $width: 500;
 $height: 500;
 
 // Create the explosion...
+/*
 $box-shadow: ();
 $box-shadow2: ();
 @for $i from 0 through $particles {
@@ -172,7 +173,7 @@ $box-shadow2: ();
     margin-left: 80%;
   }
 }
-
+*/
 
 // Mobile screens
 @media only screen and (max-width: 900px) {
