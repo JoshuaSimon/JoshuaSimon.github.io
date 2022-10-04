@@ -38,11 +38,11 @@
                 //var y = document.getElementsByClassName("wrapper")
                 if (x.style.display === "none") {
                     x.style.display = "block";
-                    document.getElementById("demo").innerHTML = "HAPPY BIRTHDAY ISA!";
+                    document.getElementById("counter").innerHTML = "HAPPY BIRTHDAY ISA!";
                     document.getElementById("btn").innerHTML = "PARTY VERLASSEN..."
                 } else {
                     x.style.display = "none";
-                    document.getElementById("demo").innerHTML = "<3";
+                    document.getElementById("counter").innerHTML = "<3";
                     document.getElementById("btn").innerHTML = "GEBURTSTAG FEIERN!"
                 }
                 
@@ -61,13 +61,21 @@
 
         <section class="Counter">
             <!-- Display the countdown timer in an element -->
+            <h3>Start: Aug 16, 2022, 08:45:00</h3>
+            <h3>End: Dec 16, 2022 18:00:00</h3>
             <p></p>
-            <h2 id="demo"></h2>
+            <h3>Remaining:</h3>
+            <h1 id="counter"></h1>
             <p></p>
+            <h3>Progress:</h3>
+            <h2 id="percent"></h2>
 
             <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("Mar 11, 2021 18:00:00").getTime();
+            var countDownDate = new Date("Dec 16, 2022 18:00:00").getTime();
+
+            // Set the date where it started
+            var startDate = new Date("Aug 16, 2022, 08:45:00").getTime();
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -77,22 +85,30 @@
 
                 // Find the distance between now and the count down date
                 var distance = countDownDate - now;
+                var absoluteDistance = countDownDate - startDate;
+
+                // Calculate progress in percent
+                var progress = now - startDate;
+                var progressPercent = progress / absoluteDistance * 100
 
                 // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7))
+                var days = Math.floor(distance % (1000 * 60 * 60 * 24 * 7) / (1000 * 60 * 60 * 24));
                 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                // Display the result in the element with id="demo"
-                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                // Display the result in the element with id="counter"
+                document.getElementById("counter").innerHTML = weeks + "w " + days + "d " + hours + "h "
                 + minutes + "m " + seconds + "s ";
+
+                document.getElementById("percent").innerHTML = progressPercent.toFixed(2) + "%"
 
                 // If the count down is finished, write some text
                 if (distance < 0) {
                     clearInterval(x);
-                    document.getElementById("demo").innerHTML = "Just because we can’t find a solution, \
-                    it doesn’t mean there isn’t one. <br> — Andrew Wiles, English mathematician";
+                    document.getElementById("counter").innerHTML = "🤍";
+                    document.getElementById("percent").innerHTML = "🎉";
                 }
             });
             </script>
