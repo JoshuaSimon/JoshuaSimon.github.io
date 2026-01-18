@@ -197,14 +197,14 @@ export const collections = { recipes };
 - [x] Add image assets to `/public/images/recipes`
 
 ### Phase 3 – UI Components
-- [ ] Create global layout and header
-- [ ] Implement RecipeCard component
-- [ ] Implement RatingStars component
+- [x] Create global layout and header
+- [x] Implement RecipeCard component
+- [x] Implement RatingStars component
 
 ### Phase 4 – Pages
-- [ ] Implement overview page (recipe list)
-- [ ] Implement dynamic recipe detail page
-- [ ] Connect pages to content collection
+- [x] Implement overview page (recipe list)
+- [x] Implement dynamic recipe detail page
+- [x] Connect pages to content collection
 
 ### Phase 5 – Styling & Polish
 - [ ] Apply modern UI styling (spacing, typography)

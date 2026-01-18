@@ -1,0 +1,204 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RatingStars from "../../components/RatingStars.astro";
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+
+export const getStaticPaths = (async () => {
+    const recipes = await getCollection("recipes");
+    return recipes.map((recipe) => ({
+        params: { slug: recipe.slug },
+        props: { recipe },
+    }));
+}) satisfies GetStaticPaths;
+
+const { recipe } = Astro.props;
+const { Content } = await recipe.render();
+---
+
+<BaseLayout
+    title={`${recipe.data.title} - Recipe Collection`}
+    description={`Learn how to make ${recipe.data.title}. Cooking time: ${recipe.data.time} minutes. ${recipe.data.notes || ''}`}
+>
+    {/* Recipe Header */}
+    <article class="container mx-auto px-4 py-8 max-w-4xl">
+        {/* Breadcrumb */}
+        <nav class="mb-6 text-sm">
+            <ol class="flex items-center gap-2 text-gray-600">
+                <li>
+                    <a href="/" class="hover:text-amber-600 transition-colors">
+                        Home
+                    </a>
+                </li>
+                <li>/</li>
+                <li class="text-gray-900 font-medium">{recipe.data.title}</li>
+            </ol>
+        </nav>
+
+        {/* Recipe Title */}
+        <header class="mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                {recipe.data.title}
+            </h1>
+
+            {/* Metadata */}
+            <div
+                class="flex flex-wrap items-center gap-6 text-gray-700 pb-6 border-b border-gray-200"
+            >
+                <div class="flex items-center gap-2">
+                    <svg
+                        class="w-5 h-5 text-amber-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>
+                        <strong class="text-gray-900"
+                            >{recipe.data.time}</strong
+                        > minutes
+                    </span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <RatingStars rating={recipe.data.rating} size="md" />
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg
+                        class="w-5 h-5 text-amber-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                        ></path>
+                    </svg>
+                    <span>
+                        <strong class="text-gray-900"
+                            >{recipe.data.ingredients.length}</strong
+                        > ingredients
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        {/* Hero Image */}
+        <div class="mb-8 rounded-xl overflow-hidden shadow-lg">
+            <img
+                src={recipe.data.image}
+                alt={recipe.data.title}
+                class="w-full h-64 md:h-96 object-cover"
+            />
+        </div>
+
+        {/* Notes Section (if present) */}
+        {
+            recipe.data.notes && (
+                <div class="mb-8 bg-amber-50 border-l-4 border-amber-400 p-6 rounded-r-lg">
+                    <div class="flex items-start gap-3">
+                        <svg
+                            class="w-6 h-6 text-amber-600 shrink-0 mt-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                        </svg>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">
+                                Chef's Note
+                            </h3>
+                            <p class="text-gray-700">{recipe.data.notes}</p>
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+
+        {/* Two Column Layout for Ingredients & Instructions */}
+        <div class="grid lg:grid-cols-3 gap-8">
+            {/* Ingredients Sidebar */}
+            <aside class="lg:col-span-1">
+                <div
+                    class="bg-white rounded-lg shadow-md p-6 lg:sticky lg:top-20"
+                >
+                    <h2
+                        class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2"
+                    >
+                        <svg
+                            class="w-6 h-6 text-amber-600"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                            ></path>
+                        </svg>
+                        Ingredients
+                    </h2>
+                    <ul class="space-y-3">
+                        {
+                            recipe.data.ingredients.map((ingredient) => (
+                                <li class="flex items-start gap-2 text-gray-700">
+                                    <span class="text-amber-600 mt-1.5 shrink-0">
+                                        •
+                                    </span>
+                                    <span>{ingredient}</span>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+            </aside>
+
+            {/* Instructions Main Content */}
+            <div class="lg:col-span-2">
+                <div
+                    class="prose prose-lg prose-gray max-w-none prose-headings:text-gray-900 prose-headings:font-bold prose-h2:text-2xl prose-h2:mb-4 prose-h2:mt-8 prose-h3:text-xl prose-h3:mb-3 prose-h3:mt-6 prose-p:text-gray-700 prose-p:leading-relaxed prose-strong:text-gray-900 prose-ul:my-4 prose-li:text-gray-700"
+                >
+                    <Content />
+                </div>
+            </div>
+        </div>
+
+        {/* Back to Recipes Link */}
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <a
+                href="/"
+                class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-medium transition-colors"
+            >
+                <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to all recipes
+            </a>
+        </div>
+    </article>
+</BaseLayout>
