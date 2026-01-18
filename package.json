@@ -1,0 +1,19 @@
+{
+  "name": "recipe-app",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "A static recipe web application built with Astro and Tailwind CSS",
+  "author": "Joshua Simon",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.11",
+    "tailwindcss": "^4.1.18"
+  }
+}
