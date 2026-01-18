@@ -1,0 +1,78 @@
+---
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "Recipe Collection - Delicious Recipes for Everyone",
+    description = "Browse our collection of delicious recipes with detailed instructions and beautiful photos.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={description} />
+        <meta name="generator" content={Astro.generator} />
+
+        {/* Favicon */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+        {/* Open Graph / Social Media */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+
+        <title>{title}</title>
+    </head>
+    <body class="bg-gray-50 min-h-screen flex flex-col">
+        <Header />
+
+        <main class="grow">
+            <slot />
+        </main>
+
+        <footer class="bg-white border-t border-gray-200 mt-16">
+            <div class="container mx-auto px-4 py-8">
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between gap-4"
+                >
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl">🍳</span>
+                        <p class="text-gray-600 text-sm">
+                            © {new Date().getFullYear()} Recipe Collection. All recipes
+                            with love.
+                        </p>
+                    </div>
+
+                    <nav class="flex items-center gap-6">
+                        <a
+                            href="/"
+                            class="text-sm text-gray-600 hover:text-amber-600 transition-colors"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="/recipes"
+                            class="text-sm text-gray-600 hover:text-amber-600 transition-colors"
+                        >
+                            Recipes
+                        </a>
+                        <a
+                            href="/about"
+                            class="text-sm text-gray-600 hover:text-amber-600 transition-colors"
+                        >
+                            About
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

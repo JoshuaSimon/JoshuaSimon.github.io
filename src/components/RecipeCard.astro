@@ -1,0 +1,60 @@
+---
+import RatingStars from "./RatingStars.astro";
+
+interface Props {
+  title: string;
+  image: string;
+  time: number;
+  rating: number;
+  slug: string;
+}
+
+const { title, image, time, rating, slug } = Astro.props;
+---
+
+<article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+  <a href={`/recipes/${slug}`} class="block">
+    <div class="relative overflow-hidden">
+      <img
+        src={image}
+        alt={title}
+        class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+      <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+        <span class="text-sm font-medium text-gray-700 flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          {time} min
+        </span>
+      </div>
+    </div>
+
+    <div class="p-5">
+      <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors line-clamp-2">
+        {title}
+      </h3>
+
+      <div class="flex items-center justify-between">
+        <RatingStars rating={rating} size="sm" />
+        <span class="text-amber-600 font-medium text-sm flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+          View Recipe
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </a>
+</article>

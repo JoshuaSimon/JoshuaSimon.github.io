@@ -1,0 +1,175 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import RecipeCard from "../components/RecipeCard.astro";
+import RatingStars from "../components/RatingStars.astro";
+import { getCollection } from "astro:content";
+
+const recipes = await getCollection("recipes");
+const sampleRecipes = recipes.slice(0, 3);
+---
+
+<BaseLayout
+    title="Components Test - Recipe App"
+    description="Testing all UI components"
+>
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-8">
+            UI Components Test Page
+        </h1>
+
+        {/* RatingStars Component */}
+        <section class="mb-12 bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                RatingStars Component
+            </h2>
+            <div class="space-y-4">
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 w-32">5 stars:</span>
+                    <RatingStars rating={5} />
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 w-32">4.5 stars:</span>
+                    <RatingStars rating={4.5} />
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 w-32">4 stars:</span>
+                    <RatingStars rating={4} />
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 w-32">3.5 stars:</span>
+                    <RatingStars rating={3.5} />
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 w-32">3 stars:</span>
+                    <RatingStars rating={3} />
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 w-32">Small size:</span>
+                    <RatingStars rating={4.5} size="sm" />
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 w-32">Medium size:</span>
+                    <RatingStars rating={4.5} size="md" />
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 w-32">Large size:</span>
+                    <RatingStars rating={4.5} size="lg" />
+                </div>
+            </div>
+        </section>
+
+        {/* RecipeCard Component */}
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">
+                RecipeCard Component
+            </h2>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {
+                    sampleRecipes.map((recipe) => (
+                        <RecipeCard
+                            title={recipe.data.title}
+                            image={recipe.data.image}
+                            time={recipe.data.time}
+                            rating={recipe.data.rating}
+                            slug={recipe.slug}
+                        />
+                    ))
+                }
+            </div>
+        </section>
+
+        {/* Header & Footer */}
+        <section class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                Layout Components
+            </h2>
+            <div class="space-y-3 text-gray-700">
+                <div class="flex items-center gap-2">
+                    <span class="text-green-500">✓</span>
+                    <span
+                        ><strong>Header:</strong> Sticky header with logo and navigation</span
+                    >
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-green-500">✓</span>
+                    <span
+                        ><strong>Mobile Menu:</strong> Responsive hamburger menu (try
+                        resizing)</span
+                    >
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-green-500">✓</span>
+                    <span
+                        ><strong>Footer:</strong> Site footer with links (scroll to
+                        bottom)</span
+                    >
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-green-500">✓</span>
+                    <span
+                        ><strong>BaseLayout:</strong> Consistent page structure</span
+                    >
+                </div>
+            </div>
+        </section>
+
+        {/* Phase 3 Status */}
+        <section
+            class="mt-12 bg-linear-to-r from-amber-50 to-orange-50 rounded-lg shadow-md p-6 border-2 border-amber-200"
+        >
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+                Phase 3 Status ✅
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">
+                        Components Created:
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Header.astro</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>RecipeCard.astro</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>RatingStars.astro</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>BaseLayout.astro</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Features:</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Responsive design</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Mobile navigation</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Hover effects</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Accessibility</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Tailwind styling</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</BaseLayout>

@@ -1,0 +1,81 @@
+---
+interface Props {
+  rating: number;
+  maxRating?: number;
+  size?: "sm" | "md" | "lg";
+}
+
+const { rating, maxRating = 5, size = "md" } = Astro.props;
+
+// Ensure rating is within bounds
+const clampedRating = Math.max(0, Math.min(rating, maxRating));
+
+// Calculate full, half, and empty stars
+const fullStars = Math.floor(clampedRating);
+const hasHalfStar = clampedRating % 1 >= 0.5;
+const emptyStars = maxRating - fullStars - (hasHalfStar ? 1 : 0);
+
+// Size classes
+const sizeClasses = {
+  sm: "w-4 h-4",
+  md: "w-5 h-5",
+  lg: "w-6 h-6",
+};
+
+const starSize = sizeClasses[size];
+---
+
+<div class="flex items-center gap-0.5" aria-label={`Rating: ${rating} out of ${maxRating} stars`}>
+  {/* Full stars */}
+  {Array.from({ length: fullStars }).map(() => (
+    <svg
+      class={`${starSize} fill-amber-400 text-amber-400`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+    </svg>
+  ))}
+
+  {/* Half star */}
+  {hasHalfStar && (
+    <svg
+      class={`${starSize} text-amber-400`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <defs>
+        <linearGradient id="half-star">
+          <stop offset="50%" stop-color="currentColor" stop-opacity="1" />
+          <stop offset="50%" stop-color="currentColor" stop-opacity="0.2" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+        fill="url(#half-star)"
+        stroke="none"
+      />
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+    </svg>
+  )}
+
+  {/* Empty stars */}
+  {Array.from({ length: emptyStars }).map(() => (
+    <svg
+      class={`${starSize} text-gray-300`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+    </svg>
+  ))}
+
+  <span class="ml-1 text-sm text-gray-600">({rating})</span>
+</div>
