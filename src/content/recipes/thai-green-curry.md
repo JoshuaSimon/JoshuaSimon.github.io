@@ -23,39 +23,21 @@ notes: "Adjust the amount of curry paste to your heat preference. You can substi
 
 ## Instructions
 
-### Step 1: Prepare the Ingredients
+1. **Prepare the Ingredients**: Cut the chicken into bite-sized pieces. Slice the bell pepper and quarter the eggplant. Have all ingredients measured and ready - this dish cooks quickly.
 
-Cut the chicken into bite-sized pieces. Slice the bell pepper and quarter the eggplant. Have all ingredients measured and ready - this dish cooks quickly.
+2. **Fry the Curry Paste**: Heat the vegetable oil in a large wok or deep skillet over medium-high heat. Add the green curry paste and fry for 2-3 minutes, stirring constantly, until fragrant. The paste should darken slightly and release its aromatic oils.
 
-### Step 2: Fry the Curry Paste
+3. **Add Coconut Cream**: Add about half of the coconut milk (the thick cream from the top of the can). Stir well to combine with the curry paste. Let it simmer for 2-3 minutes until the oil begins to separate from the coconut milk.
 
-Heat the vegetable oil in a large wok or deep skillet over medium-high heat. Add the green curry paste and fry for 2-3 minutes, stirring constantly, until fragrant. The paste should darken slightly and release its aromatic oils.
+4. **Cook the Chicken**: Add the chicken pieces to the curry. Stir to coat in the curry mixture and cook for 5-7 minutes until the chicken is no longer pink on the outside.
 
-### Step 3: Add Coconut Cream
+5. **Add Liquids and Seasonings**: Pour in the remaining coconut milk and chicken stock. Add the fish sauce, palm sugar, and torn kaffir lime leaves. Stir well and bring to a gentle simmer.
 
-Add about half of the coconut milk (the thick cream from the top of the can). Stir well to combine with the curry paste. Let it simmer for 2-3 minutes until the oil begins to separate from the coconut milk.
+6. **Add Vegetables**: Add the eggplant, bell pepper, and bamboo shoots. Simmer for 10-15 minutes until the vegetables are tender and the chicken is cooked through. Stir occasionally.
 
-### Step 4: Cook the Chicken
+7. **Final Touches**: Taste and adjust the seasoning with more fish sauce (for saltiness), sugar (for sweetness), or lime juice (for acidity). The curry should have a balance of salty, sweet, and slightly sour flavors. Add the Thai chilies if using, and stir in the Thai basil leaves. Remove from heat.
 
-Add the chicken pieces to the curry. Stir to coat in the curry mixture and cook for 5-7 minutes until the chicken is no longer pink on the outside.
-
-### Step 5: Add Liquids and Seasonings
-
-Pour in the remaining coconut milk and chicken stock. Add the fish sauce, palm sugar, and torn kaffir lime leaves. Stir well and bring to a gentle simmer.
-
-### Step 6: Add Vegetables
-
-Add the eggplant, bell pepper, and bamboo shoots. Simmer for 10-15 minutes until the vegetables are tender and the chicken is cooked through. Stir occasionally.
-
-### Step 7: Final Touches
-
-Taste and adjust the seasoning with more fish sauce (for saltiness), sugar (for sweetness), or lime juice (for acidity). The curry should have a balance of salty, sweet, and slightly sour flavors.
-
-Add the Thai chilies if using, and stir in the Thai basil leaves. Remove from heat.
-
-### Step 8: Serve
-
-Serve hot over steamed jasmine rice. Garnish with extra Thai basil leaves and sliced red chilies if desired.
+8. **Serve**: Serve hot over steamed jasmine rice. Garnish with extra Thai basil leaves and sliced red chilies if desired.
 
 ## Tips
 

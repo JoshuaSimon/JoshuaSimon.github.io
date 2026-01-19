@@ -20,37 +20,17 @@ notes: "For a lighter version, you can use Greek yogurt in place of some of the 
 
 ## Instructions
 
-### Step 1: Make the Croutons (Optional)
+1. **Make the Croutons (Optional)**: If making homemade croutons, cut day-old bread into cubes. Toss with olive oil, salt, and garlic powder. Bake at 180°C (350°F) for 10-12 minutes until golden and crispy.
 
-If making homemade croutons, cut day-old bread into cubes. Toss with olive oil, salt, and garlic powder. Bake at 180°C (350°F) for 10-12 minutes until golden and crispy.
+2. **Prepare the Dressing**: In a large wooden bowl (traditional method), mash the garlic and anchovies together with a fork until they form a paste. Add a pinch of salt to help break them down. Add the egg yolks, lemon juice, and Dijon mustard. Whisk together until well combined.
 
-### Step 2: Prepare the Dressing
+3. **Emulsify the Dressing**: While whisking constantly, slowly drizzle in the olive oil in a thin, steady stream. The dressing should become thick and creamy, similar to mayonnaise. If it's too thick, add a teaspoon of warm water to thin it out. Add a few dashes of Worcestershire sauce if desired. Season with black pepper to taste.
 
-In a large wooden bowl (traditional method), mash the garlic and anchovies together with a fork until they form a paste. Add a pinch of salt to help break them down.
+4. **Prepare the Lettuce**: Wash the romaine lettuce and dry thoroughly using a salad spinner or clean kitchen towels. Tear the lettuce into bite-sized pieces, discarding the tough stem ends.
 
-Add the egg yolks, lemon juice, and Dijon mustard. Whisk together until well combined.
+5. **Assemble the Salad**: Add the lettuce to the bowl with the dressing (or toss the dressing with the lettuce in a large serving bowl). Toss gently but thoroughly to coat all the leaves. Add half of the grated Parmesan cheese and toss again.
 
-### Step 3: Emulsify the Dressing
-
-While whisking constantly, slowly drizzle in the olive oil in a thin, steady stream. The dressing should become thick and creamy, similar to mayonnaise. If it's too thick, add a teaspoon of warm water to thin it out.
-
-Add a few dashes of Worcestershire sauce if desired. Season with black pepper to taste.
-
-### Step 4: Prepare the Lettuce
-
-Wash the romaine lettuce and dry thoroughly using a salad spinner or clean kitchen towels. Tear the lettuce into bite-sized pieces, discarding the tough stem ends.
-
-### Step 5: Assemble the Salad
-
-Add the lettuce to the bowl with the dressing (or toss the dressing with the lettuce in a large serving bowl). Toss gently but thoroughly to coat all the leaves.
-
-Add half of the grated Parmesan cheese and toss again.
-
-### Step 6: Serve
-
-Transfer to serving plates or a large platter. Top with the remaining Parmesan cheese and croutons. Add extra black pepper if desired.
-
-Serve immediately while the croutons are still crispy.
+6. **Serve**: Transfer to serving plates or a large platter. Top with the remaining Parmesan cheese and croutons. Add extra black pepper if desired. Serve immediately while the croutons are still crispy.
 
 ## Tips
 

@@ -19,43 +19,21 @@ notes: "For chewier cookies, slightly underbake them. For crispier cookies, bake
 
 ## Instructions
 
-### Step 1: Preheat and Prepare
+1. **Preheat and Prepare**: Preheat your oven to 190°C (375°F). Line two baking sheets with parchment paper or silicone baking mats.
 
-Preheat your oven to 190°C (375°F). Line two baking sheets with parchment paper or silicone baking mats.
+2. **Cream Butter and Sugars**: In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar using an electric mixer on medium speed. Beat for 2-3 minutes until the mixture is light and fluffy.
 
-### Step 2: Cream Butter and Sugars
+3. **Add Wet Ingredients**: Add the eggs one at a time, beating well after each addition. Mix in the vanilla extract until fully incorporated.
 
-In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar using an electric mixer on medium speed. Beat for 2-3 minutes until the mixture is light and fluffy.
+4. **Combine Dry Ingredients**: In a separate bowl, whisk together the flour, baking soda, and salt.
 
-### Step 3: Add Wet Ingredients
+5. **Mix the Dough**: Gradually add the dry ingredients to the wet ingredients, mixing on low speed until just combined. Don't overmix - the dough should be thick and slightly sticky. Fold in the chocolate chips (and nuts if using) with a wooden spoon or spatula until evenly distributed.
 
-Add the eggs one at a time, beating well after each addition. Mix in the vanilla extract until fully incorporated.
+6. **Shape the Cookies**: Using a cookie scoop or spoon, drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 5cm apart. Each cookie should be roughly 3-4cm in diameter. For uniform cookies, you can roll the dough into balls and slightly flatten them.
 
-### Step 4: Combine Dry Ingredients
+7. **Bake**: Bake for 10-12 minutes, or until the edges are golden brown but the centers still look slightly underdone. The cookies will continue to cook on the baking sheet after being removed from the oven.
 
-In a separate bowl, whisk together the flour, baking soda, and salt.
-
-### Step 5: Mix the Dough
-
-Gradually add the dry ingredients to the wet ingredients, mixing on low speed until just combined. Don't overmix - the dough should be thick and slightly sticky.
-
-Fold in the chocolate chips (and nuts if using) with a wooden spoon or spatula until evenly distributed.
-
-### Step 6: Shape the Cookies
-
-Using a cookie scoop or spoon, drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 5cm apart. Each cookie should be roughly 3-4cm in diameter.
-
-For uniform cookies, you can roll the dough into balls and slightly flatten them.
-
-### Step 7: Bake
-
-Bake for 10-12 minutes, or until the edges are golden brown but the centers still look slightly underdone. The cookies will continue to cook on the baking sheet after being removed from the oven.
-
-### Step 8: Cool and Serve
-
-Let the cookies cool on the baking sheet for 5 minutes, then transfer them to a wire rack to cool completely.
-
-Enjoy warm with a glass of cold milk!
+8. **Cool and Serve**: Let the cookies cool on the baking sheet for 5 minutes, then transfer them to a wire rack to cool completely. Enjoy warm with a glass of cold milk!
 
 ## Tips
 
