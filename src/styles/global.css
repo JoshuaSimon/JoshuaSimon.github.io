@@ -4,12 +4,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    /* Dark mode configuration */
-    --color-dark-bg: #0f172a;
-    --color-dark-surface: #1e293b;
-    --color-dark-border: #334155;
-    --color-dark-text: #e2e8f0;
-    --color-dark-text-muted: #94a3b8;
+    /* Dark mode configuration - Modern, richer colors */
+    --color-dark-bg: #09090b;
+    --color-dark-surface: #18181b;
+    --color-dark-border: #27272a;
+    --color-dark-text: #fafafa;
+    --color-dark-text-muted: #a1a1aa;
 }
 
 /* Custom Animations */
@@ -55,17 +55,45 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Light mode gradient background */
+body {
+    background: linear-gradient(
+        135deg,
+        #fef3c7 0%,
+        #fde68a 25%,
+        #fef3c7 50%,
+        #fed7aa 75%,
+        #fef3c7 100%
+    );
+    background-attachment: fixed;
+    background-size: 400% 400%;
+}
+
+/* Dark mode gradient background */
+.dark body {
+    background: linear-gradient(
+        135deg,
+        #09090b 0%,
+        #18181b 25%,
+        #0a0a0f 50%,
+        #18181b 75%,
+        #09090b 100%
+    );
+    background-attachment: fixed;
+    background-size: 400% 400%;
+}
+
 /* Custom scrollbar styling */
 ::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #fef3c7;
 }
 
 .dark ::-webkit-scrollbar-track {
-    background: #1e293b;
+    background: #18181b;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -78,11 +106,11 @@ html {
 }
 
 .dark ::-webkit-scrollbar-thumb {
-    background: #475569;
+    background: #52525b;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-    background: #64748b;
+    background: #71717a;
 }
 
 /* Focus styles for accessibility */
@@ -147,10 +175,10 @@ html {
 .dark .skeleton {
     background: linear-gradient(
         to right,
-        #1e293b 0%,
-        #334155 20%,
-        #1e293b 40%,
-        #1e293b 100%
+        #18181b 0%,
+        #27272a 20%,
+        #18181b 40%,
+        #18181b 100%
     );
 }
 
@@ -187,7 +215,14 @@ img {
 
 /* Gradient text utility */
 .gradient-text {
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #ea580c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark .gradient-text {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #fb923c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

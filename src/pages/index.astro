@@ -11,21 +11,27 @@ const sortedRecipes = recipes.sort((a, b) => {
 ---
 
 <BaseLayout
-    title="Recipe Collection - Delicious Recipes for Everyone"
+    title="Joshua's Recipe Collection - Delicious Recipes for Everyone"
     description="Browse our collection of delicious recipes with detailed instructions, cooking times, and ratings. From quick meals to gourmet dishes."
 >
     {/* Hero Section */}
     <section
-        class="relative bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50 dark:from-dark-surface dark:via-dark-bg dark:to-dark-surface border-b border-amber-100 dark:border-dark-border overflow-hidden"
+        class="relative bg-white/60 dark:bg-dark-surface/60 backdrop-blur-sm border-b border-amber-100 dark:border-dark-border overflow-hidden"
     >
         {/* Decorative background elements */}
-        <div class="absolute inset-0 opacity-30 dark:opacity-10">
+        <div class="absolute inset-0 opacity-40 dark:opacity-20">
             <div
-                class="absolute top-20 right-20 w-64 h-64 bg-amber-200 dark:bg-amber-900 rounded-full blur-3xl"
+                class="absolute top-20 right-20 w-72 h-72 bg-gradient-to-br from-amber-400 to-orange-400 dark:from-amber-600 dark:to-orange-600 rounded-full blur-3xl animate-pulse-slow"
             >
             </div>
             <div
-                class="absolute bottom-20 left-20 w-96 h-96 bg-orange-200 dark:bg-orange-900 rounded-full blur-3xl"
+                class="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-tr from-orange-400 to-red-400 dark:from-orange-600 dark:to-red-600 rounded-full blur-3xl animate-pulse-slow"
+                style="animation-delay: 1s;"
+            >
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-br from-yellow-400 to-amber-400 dark:from-yellow-600 dark:to-amber-600 rounded-full blur-3xl animate-pulse-slow"
+                style="animation-delay: 2s;"
             >
             </div>
         </div>
@@ -36,7 +42,7 @@ const sortedRecipes = recipes.sort((a, b) => {
                     class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-dark-text mb-6 leading-tight"
                 >
                     Welcome to <span class="gradient-text"
-                        >Recipe Collection</span
+                        >Joshua's Recipe Collection</span
                     >
                 </h1>
                 <p
@@ -48,10 +54,10 @@ const sortedRecipes = recipes.sort((a, b) => {
                     dish here.
                 </p>
                 <div
-                    class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-700 dark:text-dark-text"
+                    class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-700 dark:text-dark-text-muted"
                 >
                     <div
-                        class="flex items-center gap-2 bg-white/70 dark:bg-dark-surface/70 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm dark:shadow-gray-900/30"
+                        class="flex items-center gap-2 bg-white/90 dark:bg-dark-surface/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md dark:shadow-black/50 border border-amber-200/50 dark:border-dark-border"
                     >
                         <span class="text-2xl">📚</span>
                         <span
@@ -61,13 +67,13 @@ const sortedRecipes = recipes.sort((a, b) => {
                         >
                     </div>
                     <div
-                        class="flex items-center gap-2 bg-white/70 dark:bg-dark-surface/70 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm dark:shadow-gray-900/30"
+                        class="flex items-center gap-2 bg-white/90 dark:bg-dark-surface/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md dark:shadow-black/50 border border-amber-200/50 dark:border-dark-border"
                     >
                         <span class="text-2xl">⏱️</span>
                         <span>Quick & Easy</span>
                     </div>
                     <div
-                        class="flex items-center gap-2 bg-white/70 dark:bg-dark-surface/70 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm dark:shadow-gray-900/30"
+                        class="flex items-center gap-2 bg-white/90 dark:bg-dark-surface/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md dark:shadow-black/50 border border-amber-200/50 dark:border-dark-border"
                     >
                         <span class="text-2xl">⭐</span>
                         <span>Rated & Tested</span>
@@ -107,12 +113,12 @@ const sortedRecipes = recipes.sort((a, b) => {
 
     {/* Quick Links Section */}
     <section
-        class="bg-gray-100 dark:bg-dark-surface border-t border-gray-200 dark:border-dark-border"
+        class="bg-white/60 dark:bg-dark-surface/60 backdrop-blur-sm border-t border-gray-200 dark:border-dark-border"
     >
         <div class="container mx-auto px-4 py-16">
             <div class="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto">
                 <div
-                    class="text-center bg-white dark:bg-dark-bg p-8 rounded-xl shadow-sm dark:shadow-gray-900/30 hover:shadow-md dark:hover:shadow-gray-900/50 transition-shadow duration-300"
+                    class="text-center bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm p-8 rounded-xl shadow-md dark:shadow-black/50 hover:shadow-lg dark:hover:shadow-black/70 transition-all duration-300 border border-amber-100/50 dark:border-dark-border"
                 >
                     <div
                         class="text-5xl mb-4 inline-block transform hover:scale-110 transition-transform duration-300"
@@ -131,7 +137,7 @@ const sortedRecipes = recipes.sort((a, b) => {
                     </p>
                 </div>
                 <div
-                    class="text-center bg-white dark:bg-dark-bg p-8 rounded-xl shadow-sm dark:shadow-gray-900/30 hover:shadow-md dark:hover:shadow-gray-900/50 transition-shadow duration-300"
+                    class="text-center bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm p-8 rounded-xl shadow-md dark:shadow-black/50 hover:shadow-lg dark:hover:shadow-black/70 transition-all duration-300 border border-amber-100/50 dark:border-dark-border"
                 >
                     <div
                         class="text-5xl mb-4 inline-block transform hover:scale-110 transition-transform duration-300"
@@ -150,7 +156,7 @@ const sortedRecipes = recipes.sort((a, b) => {
                     </p>
                 </div>
                 <div
-                    class="text-center bg-white dark:bg-dark-bg p-8 rounded-xl shadow-sm dark:shadow-gray-900/30 hover:shadow-md dark:hover:shadow-gray-900/50 transition-shadow duration-300"
+                    class="text-center bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm p-8 rounded-xl shadow-md dark:shadow-black/50 hover:shadow-lg dark:hover:shadow-black/70 transition-all duration-300 border border-amber-100/50 dark:border-dark-border"
                 >
                     <div
                         class="text-5xl mb-4 inline-block transform hover:scale-110 transition-transform duration-300"
