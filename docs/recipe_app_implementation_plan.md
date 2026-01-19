@@ -212,8 +212,8 @@ export const collections = { recipes };
 - [x] Optimize images and layout performance
 
 ### Phase 6 – Deployment
-- [ ] Add GitHub Actions workflow for Astro build
-- [ ] Enable GitHub Pages
+- [x] Add GitHub Actions workflow for Astro build
+- [x] Enable GitHub Pages
 - [ ] Verify deployed site works correctly
 
 ---
