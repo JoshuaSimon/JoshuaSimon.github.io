@@ -5,11 +5,8 @@ import { getCollection } from "astro:content";
 
 const recipes = await getCollection("recipes");
 
-// Sort by rating (highest first), then by title
+// Sort alphabetically by title
 const sortedRecipes = recipes.sort((a, b) => {
-    if (b.data.rating !== a.data.rating) {
-        return b.data.rating - a.data.rating;
-    }
     return a.data.title.localeCompare(b.data.title);
 });
 
