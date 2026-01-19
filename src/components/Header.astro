@@ -1,92 +1,107 @@
 ---
 // Header component with navigation and branding
+import ThemeToggle from "./ThemeToggle.astro";
 ---
 
-<header class="bg-white shadow-sm sticky top-0 z-50">
-  <div class="container mx-auto px-4">
-    <div class="flex items-center justify-between h-16">
-      {/* Logo and Site Title */}
-      <a href="/" class="flex items-center gap-2 group">
-        <div class="text-3xl">🍳</div>
-        <div>
-          <h1 class="text-xl font-bold text-gray-900 group-hover:text-amber-600 transition-colors">
-            Recipe Collection
-          </h1>
-          <p class="text-xs text-gray-500">Delicious recipes for everyone</p>
+<header
+    class="bg-white dark:bg-dark-bg shadow-sm dark:shadow-gray-900/30 sticky top-0 z-50 border-b border-transparent dark:border-dark-border"
+>
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            {/* Logo and Site Title */}
+            <a href="/" class="flex items-center gap-2 group">
+                <div class="text-3xl">🍳</div>
+                <div>
+                    <h1
+                        class="text-xl font-bold text-gray-900 dark:text-dark-text group-hover:text-amber-600 transition-colors"
+                    >
+                        Recipe Collection
+                    </h1>
+                    <p class="text-xs text-gray-500 dark:text-dark-text-muted">
+                        Delicious recipes for everyone
+                    </p>
+                </div>
+            </a>
+
+            {/* Navigation */}
+            <nav class="hidden md:flex items-center gap-6">
+                <ThemeToggle />
+                <a
+                    href="/"
+                    class="text-gray-700 dark:text-dark-text hover:text-amber-600 transition-colors"
+                >
+                    Home
+                </a>
+                <a
+                    href="/recipes"
+                    class="text-gray-700 dark:text-dark-text hover:text-amber-600 transition-colors"
+                >
+                    Recipes
+                </a>
+                <a
+                    href="/about"
+                    class="text-gray-700 dark:text-dark-text hover:text-amber-600 transition-colors"
+                >
+                    About
+                </a>
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <div class="md:hidden flex items-center gap-2">
+                <ThemeToggle />
+                <button
+                    id="mobile-menu-button"
+                    class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-surface transition-colors"
+                    aria-label="Toggle menu"
+                >
+                    <svg
+                        class="w-6 h-6 text-gray-700 dark:text-dark-text"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-      </a>
 
-      {/* Navigation */}
-      <nav class="hidden md:flex items-center gap-6">
-        <a
-          href="/"
-          class="text-gray-700 hover:text-amber-600 font-medium transition-colors"
-        >
-          Home
-        </a>
-        <a
-          href="/recipes"
-          class="text-gray-700 hover:text-amber-600 font-medium transition-colors"
-        >
-          Recipes
-        </a>
-        <a
-          href="/about"
-          class="text-gray-700 hover:text-amber-600 font-medium transition-colors"
-        >
-          About
-        </a>
-      </nav>
-
-      {/* Mobile Menu Button */}
-      <button
-        id="mobile-menu-button"
-        class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
-        aria-label="Toggle menu"
-      >
-        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
+        {/* Mobile Menu */}
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <nav class="flex flex-col gap-2">
+                <a
+                    href="/"
+                    class="px-4 py-2 rounded-lg text-gray-700 dark:text-dark-text hover:bg-gray-100 dark:hover:bg-dark-surface hover:text-amber-600 transition-colors"
+                >
+                    Home
+                </a>
+                <a
+                    href="/recipes"
+                    class="px-4 py-2 rounded-lg text-gray-700 dark:text-dark-text hover:bg-gray-100 dark:hover:bg-dark-surface hover:text-amber-600 transition-colors"
+                >
+                    Recipes
+                </a>
+                <a
+                    href="/about"
+                    class="px-4 py-2 rounded-lg text-gray-700 dark:text-dark-text hover:bg-gray-100 dark:hover:bg-dark-surface hover:text-amber-600 transition-colors"
+                >
+                    About
+                </a>
+            </nav>
+        </div>
     </div>
-
-    {/* Mobile Menu */}
-    <div id="mobile-menu" class="hidden md:hidden pb-4">
-      <nav class="flex flex-col gap-2">
-        <a
-          href="/"
-          class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-amber-600 font-medium transition-colors"
-        >
-          Home
-        </a>
-        <a
-          href="/recipes"
-          class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-amber-600 font-medium transition-colors"
-        >
-          Recipes
-        </a>
-        <a
-          href="/about"
-          class="px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-amber-600 font-medium transition-colors"
-        >
-          About
-        </a>
-      </nav>
-    </div>
-  </div>
 </header>
 
 <script>
-  // Mobile menu toggle
-  const button = document.getElementById('mobile-menu-button');
-  const menu = document.getElementById('mobile-menu');
+    // Mobile menu toggle
+    const button = document.getElementById("mobile-menu-button");
+    const menu = document.getElementById("mobile-menu");
 
-  button?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
-  });
+    button?.addEventListener("click", () => {
+        menu?.classList.toggle("hidden");
+    });
 </script>

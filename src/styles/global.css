@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* Enable class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /* Dark mode configuration */
+    --color-dark-bg: #0f172a;
+    --color-dark-surface: #1e293b;
+    --color-dark-border: #334155;
+    --color-dark-text: #e2e8f0;
+    --color-dark-text-muted: #94a3b8;
+}
+
 /* Custom Animations */
 @keyframes fadeIn {
     from {
@@ -52,6 +64,10 @@ html {
     background: #f1f1f1;
 }
 
+.dark ::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
 ::-webkit-scrollbar-thumb {
     background: #d97706;
     border-radius: 6px;
@@ -59,6 +75,14 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #b45309;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
 }
 
 /* Focus styles for accessibility */
@@ -82,6 +106,11 @@ html {
 .skip-to-main:focus {
     left: 0;
     top: 0;
+}
+
+/* Dark mode scrollbar for body */
+.dark body {
+    color-scheme: dark;
 }
 
 /* Enhanced card hover effect */
@@ -113,6 +142,16 @@ html {
         #f0f0f0 100%
     );
     background-size: 1000px 100%;
+}
+
+.dark .skeleton {
+    background: linear-gradient(
+        to right,
+        #1e293b 0%,
+        #334155 20%,
+        #1e293b 40%,
+        #1e293b 100%
+    );
 }
 
 /* Print styles */
@@ -174,6 +213,15 @@ img {
         transparent
     );
     transition: left 0.5s;
+}
+
+.dark .card-shine::before {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
 }
 
 .card-shine:hover::before {

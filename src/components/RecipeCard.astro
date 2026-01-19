@@ -13,11 +13,11 @@ const { title, image, time, rating, slug } = Astro.props;
 ---
 
 <article
-    class="recipe-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 group"
+    class="recipe-card bg-white dark:bg-dark-surface rounded-lg shadow-md dark:shadow-gray-900/30 overflow-hidden hover:shadow-xl dark:hover:shadow-gray-900/50 transition-all duration-300 group"
 >
     <a
         href={`/recipes/${slug}`}
-        class="block focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 rounded-lg"
+        class="block focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-dark-surface rounded-lg"
     >
         <div class="relative overflow-hidden card-shine">
             <img
@@ -28,10 +28,10 @@ const { title, image, time, rating, slug } = Astro.props;
                 decoding="async"
             />
             <div
-                class="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-md group-hover:shadow-lg transition-shadow duration-300"
+                class="absolute top-3 right-3 bg-white/95 dark:bg-dark-bg/95 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-md dark:shadow-gray-900/30 group-hover:shadow-lg transition-shadow duration-300"
             >
                 <span
-                    class="text-sm font-medium text-gray-700 flex items-center gap-1"
+                    class="text-sm font-medium text-gray-700 dark:text-dark-text flex items-center gap-1"
                 >
                     <svg
                         class="w-4 h-4"
@@ -53,7 +53,7 @@ const { title, image, time, rating, slug } = Astro.props;
 
         <div class="p-5 sm:p-6">
             <h3
-                class="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors duration-300 line-clamp-2"
+                class="text-xl font-bold text-gray-900 dark:text-dark-text mb-3 group-hover:text-amber-600 transition-colors duration-300 line-clamp-2"
             >
                 {title}
             </h3>

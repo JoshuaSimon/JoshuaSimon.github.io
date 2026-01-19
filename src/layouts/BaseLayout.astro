@@ -21,8 +21,23 @@ const {
         <meta name="description" content={description} />
         <meta name="generator" content={Astro.generator} />
 
+        {/* Theme initialization script - prevents flash of wrong theme */}
+        <script is:inline>
+            (function () {
+                const theme = localStorage.getItem("theme") || "light";
+                if (theme === "dark") {
+                    document.documentElement.classList.add("dark");
+                }
+            })();
+        </script>
+
         {/* Theme Color */}
         <meta name="theme-color" content="#f59e0b" />
+        <meta
+            name="theme-color"
+            content="#0f172a"
+            media="(prefers-color-scheme: dark)"
+        />
 
         {/* Favicon */}
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -42,7 +57,9 @@ const {
 
         <title>{title}</title>
     </head>
-    <body class="bg-gray-50 min-h-screen flex flex-col">
+    <body
+        class="bg-gray-50 dark:bg-dark-bg min-h-screen flex flex-col transition-colors duration-200"
+    >
         {/* Skip to main content for accessibility */}
         <a href="#main-content" class="skip-to-main"> Skip to main content </a>
 
@@ -52,14 +69,18 @@ const {
             <slot />
         </main>
 
-        <footer class="bg-white border-t border-gray-200 mt-16">
+        <footer
+            class="bg-white dark:bg-dark-surface border-t border-gray-200 dark:border-dark-border mt-16"
+        >
             <div class="container mx-auto px-4 py-8">
                 <div
                     class="flex flex-col md:flex-row items-center justify-between gap-4"
                 >
                     <div class="flex items-center gap-2">
                         <span class="text-2xl">🍳</span>
-                        <p class="text-gray-600 text-sm">
+                        <p
+                            class="text-gray-600 dark:text-dark-text-muted text-sm"
+                        >
                             © {new Date().getFullYear()} Recipe Collection. All recipes
                             with love.
                         </p>
@@ -68,19 +89,19 @@ const {
                     <nav class="flex items-center gap-6">
                         <a
                             href="/"
-                            class="text-sm text-gray-600 hover:text-amber-600 transition-colors"
+                            class="text-sm text-gray-600 dark:text-dark-text-muted hover:text-amber-600 transition-colors"
                         >
                             Home
                         </a>
                         <a
                             href="/recipes"
-                            class="text-sm text-gray-600 hover:text-amber-600 transition-colors"
+                            class="text-sm text-gray-600 dark:text-dark-text-muted hover:text-amber-600 transition-colors"
                         >
                             Recipes
                         </a>
                         <a
                             href="/about"
-                            class="text-sm text-gray-600 hover:text-amber-600 transition-colors"
+                            class="text-sm text-gray-600 dark:text-dark-text-muted hover:text-amber-600 transition-colors"
                         >
                             About
                         </a>
@@ -88,5 +109,45 @@ const {
                 </div>
             </div>
         </footer>
+
+        {/* Global theme toggle script */}
+        <script is:inline>
+            // Update icon visibility based on current theme
+            function updateIcons() {
+                const isDark =
+                    document.documentElement.classList.contains("dark");
+                document
+                    .querySelectorAll(".theme-toggle-light-icon")
+                    .forEach((icon) => {
+                        icon.classList.toggle("hidden", !isDark);
+                    });
+                document
+                    .querySelectorAll(".theme-toggle-dark-icon")
+                    .forEach((icon) => {
+                        icon.classList.toggle("hidden", isDark);
+                    });
+            }
+
+            // Initialize icons on page load
+            updateIcons();
+
+            // Add click handlers to all theme toggle buttons
+            document.querySelectorAll(".theme-toggle").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const isDark =
+                        document.documentElement.classList.contains("dark");
+
+                    if (isDark) {
+                        document.documentElement.classList.remove("dark");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        document.documentElement.classList.add("dark");
+                        localStorage.setItem("theme", "dark");
+                    }
+
+                    updateIcons();
+                });
+            });
+        </script>
     </body>
 </html>

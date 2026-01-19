@@ -207,9 +207,9 @@ export const collections = { recipes };
 - [x] Connect pages to content collection
 
 ### Phase 5 – Styling & Polish
-- [ ] Apply modern UI styling (spacing, typography)
-- [ ] Ensure responsive layout
-- [ ] Optimize images and layout performance
+- [x] Apply modern UI styling (spacing, typography)
+- [x] Ensure responsive layout
+- [x] Optimize images and layout performance
 
 ### Phase 6 – Deployment
 - [ ] Add GitHub Actions workflow for Astro build
