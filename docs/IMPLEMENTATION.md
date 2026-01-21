@@ -214,7 +214,7 @@ export const collections = { recipes };
 ### Phase 6 – Deployment
 - [x] Add GitHub Actions workflow for Astro build
 - [x] Enable GitHub Pages
-- [ ] Verify deployed site works correctly
+- [x] Verify deployed site works correctly
 
 ---
 
