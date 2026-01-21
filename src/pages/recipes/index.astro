@@ -1,0 +1,134 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import RecipeCard from "../../components/RecipeCard.astro";
+import { getCollection } from "astro:content";
+
+const recipes = await getCollection("recipes");
+
+// Sort alphabetically by title
+const sortedRecipes = recipes.sort((a, b) => {
+    return a.data.title.localeCompare(b.data.title);
+});
+
+// Calculate some stats
+const totalRecipes = recipes.length;
+const avgRating = (
+    recipes.reduce((sum, r) => sum + r.data.rating, 0) / totalRecipes
+).toFixed(1);
+const avgTime = Math.round(
+    recipes.reduce((sum, r) => sum + r.data.time, 0) / totalRecipes,
+);
+---
+
+<BaseLayout
+    title="All Recipes - Joshua's Recipe Collection"
+    description="Browse all our delicious recipes. Find quick meals, gourmet dishes, desserts, and more with detailed instructions and ratings."
+>
+    {/* Page Header */}
+    <section
+        class="bg-white dark:bg-dark-surface border-b border-gray-200 dark:border-dark-border"
+    >
+        <div class="container mx-auto px-4 py-12 md:py-16">
+            <div class="max-w-3xl">
+                <h1
+                    class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-dark-text mb-4"
+                >
+                    All Recipes
+                </h1>
+                <p class="text-lg text-gray-600 dark:text-dark-text-muted mb-6">
+                    Browse our complete collection of {totalRecipes} recipes. From
+                    quick weeknight dinners to impressive weekend projects, find your
+                    next culinary adventure.
+                </p>
+
+                {/* Recipe Stats */}
+                <div
+                    class="flex flex-wrap items-center gap-6 text-sm text-gray-600 dark:text-dark-text-muted"
+                >
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">📚</span>
+                        <span>
+                            <strong class="text-gray-900 dark:text-dark-text"
+                                >{totalRecipes}</strong
+                            > recipes
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">⭐</span>
+                        <span>
+                            <strong class="text-gray-900 dark:text-dark-text"
+                                >{avgRating}</strong
+                            > avg rating
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">⏱️</span>
+                        <span>
+                            <strong class="text-gray-900 dark:text-dark-text"
+                                >{avgTime}</strong
+                            > min avg time
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* Recipe Grid */}
+    <section class="container mx-auto px-4 py-12 md:py-16">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {
+                sortedRecipes.map((recipe) => (
+                    <RecipeCard
+                        title={recipe.data.title}
+                        image={recipe.data.image}
+                        time={recipe.data.time}
+                        rating={recipe.data.rating}
+                        slug={recipe.slug}
+                    />
+                ))
+            }
+        </div>
+
+        {/* Empty State (if no recipes) */}
+        {
+            recipes.length === 0 && (
+                <div class="text-center py-12">
+                    <div class="text-6xl mb-4">🍳</div>
+                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-dark-text mb-2">
+                        No recipes yet
+                    </h2>
+                    <p class="text-gray-600 dark:text-dark-text-muted">
+                        Check back soon for delicious recipes!
+                    </p>
+                </div>
+            )
+        }
+    </section>
+
+    {/* Call to Action */}
+    <section
+        class="bg-violet-50 dark:bg-dark-surface border-t border-violet-100 dark:border-dark-border"
+    >
+        <div class="container mx-auto px-4 py-12">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-dark-text mb-4"
+                >
+                    Can't find what you're looking for?
+                </h2>
+                <p class="text-gray-600 dark:text-dark-text-muted mb-6">
+                    We're constantly adding new recipes. Check back regularly
+                    for updates, or browse our existing collection for
+                    inspiration.
+                </p>
+                <a
+                    href="/"
+                    class="inline-block px-6 py-3 bg-violet-600 text-white font-medium rounded-lg hover:bg-violet-700 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-500"
+                >
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+</BaseLayout>

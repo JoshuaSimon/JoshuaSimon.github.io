@@ -1,0 +1,153 @@
+---
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const {
+    title = "Recipe Collection - Delicious Recipes for Everyone",
+    description = "Browse our collection of delicious recipes with detailed instructions and beautiful photos.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={description} />
+        <meta name="generator" content={Astro.generator} />
+
+        {/* Theme initialization script - prevents flash of wrong theme */}
+        <script is:inline>
+            (function () {
+                const theme = localStorage.getItem("theme") || "light";
+                if (theme === "dark") {
+                    document.documentElement.classList.add("dark");
+                }
+            })();
+        </script>
+
+        {/* Theme Color */}
+        <meta name="theme-color" content="#f59e0b" />
+        <meta
+            name="theme-color"
+            content="#0f172a"
+            media="(prefers-color-scheme: dark)"
+        />
+
+        {/* Favicon */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+
+        {/* Open Graph / Social Media */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content="Recipe Collection" />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+
+        <title>{title}</title>
+    </head>
+    <body
+        class="bg-gray-50 dark:bg-dark-bg min-h-screen flex flex-col transition-colors duration-200"
+    >
+        {/* Skip to main content for accessibility */}
+        <a href="#main-content" class="skip-to-main"> Skip to main content </a>
+
+        <Header />
+
+        <main id="main-content" class="grow">
+            <slot />
+        </main>
+
+        <footer
+            class="bg-white dark:bg-dark-surface border-t border-gray-200 dark:border-dark-border mt-16"
+        >
+            <div class="container mx-auto px-4 py-8">
+                <div
+                    class="flex flex-col md:flex-row items-center justify-between gap-4"
+                >
+                    <div class="flex items-center gap-2">
+                        <span class="text-2xl">🍳</span>
+                        <p
+                            class="text-gray-600 dark:text-dark-text-muted text-sm"
+                        >
+                            © {new Date().getFullYear()} Joshua's Recipe Collection.
+                            All recipes with love.
+                        </p>
+                    </div>
+
+                    <nav class="flex items-center gap-6">
+                        <a
+                            href="/"
+                            class="text-sm text-gray-600 dark:text-dark-text-muted hover:text-violet-600 transition-colors"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="/recipes"
+                            class="text-sm text-gray-600 dark:text-dark-text-muted hover:text-violet-600 transition-colors"
+                        >
+                            Recipes
+                        </a>
+                        <a
+                            href="/about"
+                            class="text-sm text-gray-600 dark:text-dark-text-muted hover:text-violet-600 transition-colors"
+                        >
+                            About
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+        {/* Global theme toggle script */}
+        <script is:inline>
+            // Update icon visibility based on current theme
+            function updateIcons() {
+                const isDark =
+                    document.documentElement.classList.contains("dark");
+                document
+                    .querySelectorAll(".theme-toggle-light-icon")
+                    .forEach((icon) => {
+                        icon.classList.toggle("hidden", !isDark);
+                    });
+                document
+                    .querySelectorAll(".theme-toggle-dark-icon")
+                    .forEach((icon) => {
+                        icon.classList.toggle("hidden", isDark);
+                    });
+            }
+
+            // Initialize icons on page load
+            updateIcons();
+
+            // Add click handlers to all theme toggle buttons
+            document.querySelectorAll(".theme-toggle").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const isDark =
+                        document.documentElement.classList.contains("dark");
+
+                    if (isDark) {
+                        document.documentElement.classList.remove("dark");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        document.documentElement.classList.add("dark");
+                        localStorage.setItem("theme", "dark");
+                    }
+
+                    updateIcons();
+                });
+            });
+        </script>
+    </body>
+</html>
