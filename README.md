@@ -141,6 +141,7 @@ export default defineConfig({
 - [Astro Documentation](https://docs.astro.build)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
+- [Astro GitHub Pages Integration](https://docs.astro.build/en/guides/deploy/github/)
 
 ## 🔮 Future Enhancements (Out of Scope for v1)
 
