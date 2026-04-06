@@ -1,0 +1,123 @@
+# Project Rules & Agent Guidelines
+
+## Project Overview
+
+This is **Joshua's Recipe Collection** — a personal, static recipe web application built with Astro and Tailwind CSS v4. It is deployed as a GitHub Pages user site at `https://joshuasimon.github.io`. The project is in its first prototype (v1) and focuses on public recipe browsing with no authentication or backend.
+
+## Tech Stack
+
+- **Framework**: Astro (v5+) — static site generation
+- **Styling**: Tailwind CSS v4 via `@tailwindcss/vite` Vite plugin (no `tailwind.config.js` — configured in CSS)
+- **Content**: Astro Content Collections with Markdown (`.md`) files and Zod schema validation
+- **Language**: TypeScript in strictest mode (`astro/tsconfigs/strict`)
+- **Deployment**: GitHub Pages (user site — no base path)
+- **Package Manager**: npm
+
+## Project Structure
+
+```
+.
+├── .github/workflows/         # GitHub Actions CI/CD (deploys on push to main)
+├── public/
+│   └── images/recipes/        # Recipe images (.png or .jpg), named by recipe slug
+├── src/
+│   ├── components/            # Reusable Astro components
+│   │   ├── Header.astro
+│   │   ├── RecipeCard.astro
+│   │   ├── RatingStars.astro
+│   │   └── ThemeToggle.astro
+│   ├── content/
+│   │   ├── config.ts          # Zod schema for the "recipes" collection
+│   │   └── recipes/           # One .md file per recipe
+│   ├── layouts/
+│   │   └── BaseLayout.astro   # Shared HTML shell with Header, Footer, dark mode
+│   ├── pages/
+│   │   ├── index.astro        # Homepage
+│   │   ├── about.astro        # About page
+│   │   └── recipes/
+│   │       ├── index.astro    # Recipe listing/browse page
+│   │       └── [slug].astro   # Dynamic recipe detail page
+│   └── styles/
+│       └── global.css         # Global styles and Tailwind imports
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
+
+## Content Schema
+
+Every recipe Markdown file in `src/content/recipes/` must have the following frontmatter, validated by Zod in `src/content/config.ts`:
+
+```ts
+{
+  title: string;           // Display name of the recipe
+  image: string;           // Absolute path from public/, e.g. "/images/recipes/my-recipe.png"
+  time: number;            // Prep + cook time in minutes (positive integer)
+  rating: number;          // 1–5 star rating
+  ingredients: string[];   // List of ingredients as plain strings
+  notes?: string;          // Optional extra notes
+}
+```
+
+The Markdown body below the frontmatter contains the step-by-step cooking instructions, typically as a numbered list under a `## Instructions` heading.
+
+## Naming Conventions
+
+- **Recipe slugs / filenames**: kebab-case, e.g. `chicken-tikka-masala.md`. The slug drives the URL (`/recipes/chicken-tikka-masala`) and the image filename (`/images/recipes/chicken-tikka-masala.png`).
+- **Components**: PascalCase `.astro` files, e.g. `RecipeCard.astro`.
+- **Pages**: lowercase kebab-case `.astro` files.
+- **CSS classes**: Tailwind utility classes only. Custom classes are minimal and defined in `global.css`.
+
+## Coding Conventions
+
+- All `.astro` files use TypeScript in the frontmatter fence (`---`). Strict types are enforced — avoid `any`.
+- Component props are defined with an `interface Props { ... }` block inside the frontmatter.
+- Use Astro's `<slot />` for layout composition.
+- Prefer Astro components over framework components (no React/Vue/Svelte installed).
+- Images are referenced from `public/` and loaded with `loading="lazy"` and `decoding="async"`.
+- Dark mode is class-based (`dark` on `<html>`). Always provide `dark:` variants for colors when adding new UI. The user's preference is persisted to `localStorage`.
+- Tailwind `dark:` custom colours used throughout: `dark-bg`, `dark-surface`, `dark-border`, `dark-text`, `dark-text-muted` — defined in `global.css`.
+- The primary accent color is **violet** (`violet-600` / `violet-400` in dark mode).
+
+## Adding a New Recipe
+
+1. Create `src/content/recipes/<slug>.md` with the required frontmatter fields.
+2. Add a corresponding image at `public/images/recipes/<slug>.png` (preferred) or `.jpg`.
+3. Write the recipe body in Markdown below the frontmatter, using `## Instructions` as the main heading and a numbered list for steps.
+4. No other code changes are needed — the dynamic `[slug].astro` page and recipe listing pick it up automatically.
+
+## Development Commands
+
+```
+npm run dev       # Start dev server at http://localhost:4321
+npm run build     # Build static output to dist/
+npm run preview   # Preview the production build locally
+```
+
+## Deployment
+
+- Push to the `main` branch to trigger automatic GitHub Pages deployment via GitHub Actions.
+- The site URL is `https://joshuasimon.github.io` (no subdirectory/base path).
+- Do not change the `site` value in `astro.config.mjs` without also updating the GitHub Pages configuration.
+
+## Out of Scope (v1)
+
+Do not implement or suggest the following — they are explicitly deferred to future versions:
+
+- User authentication or OAuth
+- A CMS editing UI
+- Recipe search or filtering
+- Dynamic ratings or user reviews
+- A backend or database (e.g. SQLite)
+- Comments or social features
+
+## Agent Guidance
+
+- When modifying components, always check for and maintain `dark:` Tailwind variants.
+- When adding new pages, extend `BaseLayout.astro` and follow the existing meta/OG tag patterns.
+- Do not introduce new npm dependencies without a clear reason — keep the bundle lean.
+- Do not modify `dist/` — it is a build artifact.
+- Do not commit `.DS_Store` or other OS-specific files.
+- Prefer editing existing components over creating new abstractions unless the reuse case is clear.
+- Recipe instructions may be in German or English — do not translate existing content.
+- Keep accessibility in mind: use semantic HTML, `alt` text on images, and maintain the existing skip-link pattern.
