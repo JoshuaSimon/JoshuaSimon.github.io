@@ -16,6 +16,9 @@ ingredients:
   - 1 - 2 Zwiebeln
   - 1 - 2 Knoblauchzehen
   - Thymian, Rosmarin
+references:
+  - "https://leckereideen.com/nudeln-mit-champignons/"
+  - "https://pin.it/7d2SRtaKA"
 ---
 
 ## Instructions
@@ -25,8 +28,3 @@ ingredients:
 3. Währenddessen einen großen Topf mit Wasser zum Kochen bringen und die Bandnudeln hineingeben.
 4. In die Pfanne mit den Pilzen nun etwas Tomatenmark geben und für ein paar Minuten ziehen lassen. Anschließend die Sahne hinzufügen.
 5. Am Ende Nudeln, Pilzsoße und Fleisch in einer großen Pfanne vermengen und servieren.
-
-## Referenzen
-
-- https://leckereideen.com/nudeln-mit-champignons/
-- https://pin.it/7d2SRtaKA

@@ -16,6 +16,8 @@ ingredients:
   - 1 Zwiebel
   - 1 Paprika
   - Oliven
+references:
+  - "https://www.chefkoch.de/rezepte/1151011221381450/Der-beste-Pizzateig.html"
 ---
 
 ## Instructions
@@ -25,5 +27,3 @@ ingredients:
 3. **Teig ausrollen**: Den Teig auf einer flachen Arbeitsfläche ausrollen. Dabei versuchen, den Teig dünn zu halten, um eine gleichmäßige Oberfläche zu erhalten. Etwa 4 mm sind eine gute Dicke für eine Pizza.
 4. **Pizza belegen**: Zunächst die passierten Tomaten auf dem Teig verteilen. Danach den Mozzarella und die gewünschten Zutaten wie Salami, Kochschinken, Champignons, Zwiebeln, Paprika und Oliven darauflegen.
 5. **Pizza backen**: Die Pizza auf ein Backblech legen und im vorgeheizten Ofen etwa 15–20 Minuten backen, bis die Oberfläche goldbraun ist. Wenn der Ofen gut vorgeheizt ist, kann sich die Backzeit verkürzen. Deshalb die Pizza regelmäßig prüfen und die Backzeit bei Bedarf anpassen.
-
-Referenz: https://www.chefkoch.de/rezepte/1151011221381450/Der-beste-Pizzateig.html

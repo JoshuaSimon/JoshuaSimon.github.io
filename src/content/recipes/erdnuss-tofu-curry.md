@@ -17,6 +17,8 @@ ingredients:
   - Frühlingszwiebeln (in Ringen)
   - Schwarzer Sesam
   - Chiliflocken
+references:
+  - "https://www.instagram.com/reels/DU--aCxDWQ6/"
 ---
 
 ## Instructions
@@ -25,5 +27,3 @@ ingredients:
 2. **Reis kochen**: Wasser in einem Topf zum Kochen bringen. Anschließend etwas Salz und den Reis hinzufügen. Den Reis dann auf mittlerer Hitze etwa 10 Minuten köcheln lassen, bis er weich ist.
 3. **Anbraten**: Tofu hinzufügen und alles gemeinsam goldbraun anbraten. Mit der Alpro Hafer-Sahne ablöschen und die Erdnussbutter einrühren. Falls die Soße zu dick ist, einen Schuss heißes Wasser dazugeben.
 4. **Anrichten**: Mit Sojasauce, Salz und Pfeffer abschmecken. Mit Reis servieren und mit Frühlingszwiebeln, Sesam und Chiliflocken toppen.
-
-Referenz: https://www.instagram.com/reels/DU--aCxDWQ6/

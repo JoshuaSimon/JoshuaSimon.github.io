@@ -9,6 +9,7 @@ const recipes = defineCollection({
     rating: z.number().min(1).max(5),
     ingredients: z.array(z.string()),
     notes: z.string().optional(),
+    references: z.array(z.string().url()).optional(),
   }),
 });
 
