@@ -1,5 +1,5 @@
 ---
-title: "Mexikanischer Tacco-Salat"
+title: "Mexikanischer Taco-Salat"
 image: "/images/recipes/tacco-salat.png"
 time: 45
 rating: 4.5
@@ -20,17 +20,17 @@ ingredients:
 
 ## Instructions
 
-1. **Hackfleisch anbraten**: Öl erhitzen, Hackfleisch krümelig braten. Taco-Gewürz + Wasser zugeben, kurz köcheln lassen. Abkühlen lassen.
-2. **Creme rühren**: Crème fraîche + Gewürz/Fix glatt rühren.
-3. **Gemüse vorbereiten**: Tomaten & Avocado würfeln, Avocado mit Zitronensaft beträufeln, Zwiebeln fein würfeln, Salat fein schneiden. Bohnen und Mais abtropfen.
+1. **Hackfleisch anbraten**: Öl erhitzen, Hackfleisch krümelig braten. Taco-Gewürz und etwas Wasser zugeben, dann kurz köcheln lassen. Anschließend abkühlen lassen.
+2. **Creme rühren**: Crème fraîche und Gewürz-Fix glatt rühren.
+3. **Gemüse vorbereiten**: Tomaten und Avocado würfeln, die Avocado mit Zitronensaft beträufeln, die Zwiebel fein würfeln und den Salat klein schneiden. Bohnen und Mais abtropfen lassen.
 4. **Schichten (von unten nach oben)**
-	•	Hackfleisch
-	•	Kidneybohnen
-	•	Mais
-	•	Creme
-	•	Tomaten
-	•	Zwiebeln
-	•	Salat
-	•	Käse
+   - Hackfleisch
+   - Kidneybohnen
+   - Mais
+   - Creme
+   - Tomaten
+   - Zwiebeln
+   - Salat
+   - Käse
 5. **Kühlen**: Optional 30–60 Minuten durchziehen lassen.
-6. **Servieren**:Nachos darüber streuen oder separat dazu reichen.
+6. **Servieren**: Nachos darüberstreuen oder separat dazu reichen.

@@ -8,12 +8,12 @@ ingredients:
   - Spinat
   - Kartoffeln
   - Sahne
-  - Gerieben Käse
+  - Geriebener Käse
 ---
 
 ## Instructions
 
-1. Kartoffeln kochen
-2. Kartoffeln in einer großen Auflaufform zerstampfen, so dass ein Boden entsteht
-3. Fischstäbchen und Spinat in auf die Kartoffeln geben und mit Sahne und Käse abschließen
-4. Alles für 25 bis 35 Minuten im Ofen backen
+1. Kartoffeln kochen.
+2. Die Kartoffeln in einer großen Auflaufform zerstampfen, sodass ein Boden entsteht.
+3. Fischstäbchen und Spinat auf die Kartoffeln geben und mit Sahne und Käse bedecken.
+4. Alles 25 bis 35 Minuten im Ofen backen.

@@ -1,45 +1,44 @@
 ---
-title: "Chocolate Chip Cookies"
+title: "Schoko-Cookies"
 image: "/images/recipes/chocolate-chip-cookies.svg"
 time: 35
 rating: 5
 ingredients:
-  - "225g unsalted butter, softened"
-  - "200g granulated sugar"
-  - "220g brown sugar, packed"
-  - "2 large eggs"
-  - "2 teaspoons vanilla extract"
-  - "310g all-purpose flour"
-  - "1 teaspoon baking soda"
-  - "1 teaspoon salt"
-  - "340g chocolate chips (semi-sweet or dark)"
-  - "100g chopped walnuts or pecans (optional)"
-notes: "For chewier cookies, slightly underbake them. For crispier cookies, bake a bit longer. The dough can be refrigerated for up to 3 days or frozen for up to 3 months."
+  - "225 g ungesalzene Butter, weich"
+  - "200 g Zucker"
+  - "220 g brauner Zucker"
+  - "2 große Eier"
+  - "2 TL Vanilleextrakt"
+  - "310 g Mehl"
+  - "1 TL Natron"
+  - "1 TL Salz"
+  - "340 g Schokodrops oder Schokostückchen"
+  - "100 g gehackte Walnüsse oder Pekannüsse (optional)"
+notes: "Für besonders weiche Cookies lieber etwas kürzer backen. Für knusprigere Cookies einfach etwas länger im Ofen lassen. Der Teig kann bis zu 3 Tage gekühlt oder bis zu 3 Monate eingefroren werden."
 ---
 
 ## Instructions
 
-1. **Preheat and Prepare**: Preheat your oven to 190°C (375°F). Line two baking sheets with parchment paper or silicone baking mats.
+1. **Ofen vorheizen**: Den Backofen auf 190 °C vorheizen. Zwei Backbleche mit Backpapier oder Silikonmatten auslegen.
 
-2. **Cream Butter and Sugars**: In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar using an electric mixer on medium speed. Beat for 2-3 minutes until the mixture is light and fluffy.
+2. **Butter und Zucker verrühren**: In einer großen Schüssel die weiche Butter mit Zucker und braunem Zucker mit einem Handmixer 2–3 Minuten cremig aufschlagen, bis die Masse hell und luftig ist.
 
-3. **Add Wet Ingredients**: Add the eggs one at a time, beating well after each addition. Mix in the vanilla extract until fully incorporated.
+3. **Feuchte Zutaten hinzufügen**: Die Eier einzeln unterrühren. Danach den Vanilleextrakt einmischen, bis alles gut verbunden ist.
 
-4. **Combine Dry Ingredients**: In a separate bowl, whisk together the flour, baking soda, and salt.
+4. **Trockene Zutaten mischen**: In einer separaten Schüssel Mehl, Natron und Salz miteinander vermengen.
 
-5. **Mix the Dough**: Gradually add the dry ingredients to the wet ingredients, mixing on low speed until just combined. Don't overmix - the dough should be thick and slightly sticky. Fold in the chocolate chips (and nuts if using) with a wooden spoon or spatula until evenly distributed.
+5. **Teig herstellen**: Die trockenen Zutaten nach und nach zu den feuchten Zutaten geben und auf niedriger Stufe nur so lange verrühren, bis ein Teig entsteht. Nicht zu lange rühren. Zum Schluss die Schokodrops und optional die Nüsse mit einem Kochlöffel oder Teigschaber unterheben.
 
-6. **Shape the Cookies**: Using a cookie scoop or spoon, drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 5cm apart. Each cookie should be roughly 3-4cm in diameter. For uniform cookies, you can roll the dough into balls and slightly flatten them.
+6. **Cookies formen**: Mit einem Löffel oder Eisportionierer runde Portionen auf die vorbereiteten Bleche setzen. Zwischen den Cookies etwa 5 cm Abstand lassen. Für gleichmäßige Cookies kann der Teig auch zu Kugeln geformt und leicht flach gedrückt werden.
 
-7. **Bake**: Bake for 10-12 minutes, or until the edges are golden brown but the centers still look slightly underdone. The cookies will continue to cook on the baking sheet after being removed from the oven.
+7. **Backen**: Die Cookies 10–12 Minuten backen, bis die Ränder goldbraun sind, die Mitte aber noch leicht weich wirkt. Auf dem heißen Blech backen sie nach dem Herausnehmen noch etwas nach.
 
-8. **Cool and Serve**: Let the cookies cool on the baking sheet for 5 minutes, then transfer them to a wire rack to cool completely. Enjoy warm with a glass of cold milk!
+8. **Abkühlen und servieren**: Die Cookies 5 Minuten auf dem Blech ruhen lassen, dann auf ein Kuchengitter setzen und vollständig auskühlen lassen. Am besten noch leicht warm genießen.
 
 ## Tips
 
-- For extra flavor, brown the butter before using it (let it cool to room temperature first)
-- Add a sprinkle of sea salt on top right after baking for a sweet-salty combination
-- Chilling the dough for 30 minutes before baking helps prevent spreading and creates thicker cookies
-- Use a mix of chocolate chips and chocolate chunks for varied texture
-- For perfectly round cookies, use a round cookie cutter to shape them immediately after removing from the oven
-- Store in an airtight container at room temperature for up to 5 days
+- Für mehr Aroma kann die Butter vorher gebräunt werden. Vor der Weiterverarbeitung wieder auf Raumtemperatur abkühlen lassen.
+- Eine kleine Prise Meersalz direkt nach dem Backen sorgt für einen tollen süß-salzigen Kontrast.
+- Wenn der Teig vor dem Backen 30 Minuten gekühlt wird, verlaufen die Cookies weniger stark und werden etwas dicker.
+- Eine Mischung aus Schokodrops und grob gehackter Schokolade sorgt für mehr Struktur.
+- In einer luftdichten Dose bleiben die Cookies bei Raumtemperatur bis zu 5 Tage frisch.

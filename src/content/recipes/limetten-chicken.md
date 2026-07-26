@@ -7,11 +7,12 @@ ingredients:
   - Hähnchengeschnetzeltes
   - 1-2 Limetten
   - Erdnussbutter
+  - Honig
   - Reis
   - Radieschen
   - Salatgurke
-  - Teriyaki Soße
-  - Sriracha Soße
+  - Teriyaki-Soße
+  - Sriracha-Soße
   - 2 Knoblauchzehen
   - Salz
   - Pfeffer
@@ -19,7 +20,8 @@ ingredients:
 
 ## Instructions
 
-1. **Reis**: Wasser für Reis aufsetzten und Reis kochen. 
-2. **Fleisch**: Hähnchen mit Salz, Pfeffer und Paprika würzen. Anschließend mit Knoblauch anbraten und Teriyaki Soße hinzugeben. Alternativ kann das Fleisch zuvor auch darin mariniert werden. 
-3. **Für den Salat**: Gurke und Radieschen in Stücke schneiden. Sriracha Soße und Limettensaft darüber geben und vermischen. Mit Salz und Pfeffer würzen und abschmecken.
-4. **Für den Dip**: Limetten heiß abwaschen, Schale abreiben und Limetten vierteln. Erdnussbitter, Honig, restliche Teriyaki Soße, Saft von Limetten in eine Schüssel geben und vermischen.
+1. **Reis**: Wasser für den Reis aufsetzen und den Reis kochen.
+2. **Fleisch**: Das Hähnchen mit Salz, Pfeffer und Paprika würzen. Anschließend mit Knoblauch anbraten und Teriyaki-Soße hinzugeben. Alternativ kann das Fleisch vorher darin mariniert werden.
+3. **Salat**: Gurke und Radieschen in Stücke schneiden. Sriracha-Soße und Limettensaft darübergeben und vermischen. Mit Salz und Pfeffer würzen und abschmecken.
+4. **Dip**: Limetten heiß abwaschen, die Schale abreiben und die Limetten vierteln. Erdnussbutter, Honig, restliche Teriyaki-Soße und Limettensaft in eine Schüssel geben und verrühren.
+5. **Anrichten**: Reis, Hähnchen, Salat und Dip zusammen servieren.

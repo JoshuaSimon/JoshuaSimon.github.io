@@ -4,26 +4,26 @@ image: "/images/recipes/spaghetti-carbonara.png"
 time: 30
 rating: 5
 ingredients:
-  - "300g Spaghetti"
-  - "150g Schinkenspeck"
+  - "300 g Spaghetti"
+  - "150 g Schinkenspeck"
   - "3 Eier"
-  - "100g Parmesan"
+  - "100 g Parmesan"
   - "100 ml Sahne"
   - "Salz"
   - "Pfeffer"
-notes: "Use freshly grated cheese for the best results. The heat from the pasta cooks the eggs, so timing is crucial to avoid scrambling. Never add cream to carbonara - it's not traditional!"
+notes: "Frisch geriebener Käse sorgt für das beste Ergebnis. Die Resthitze der Pasta gart die Eier, deshalb ist das Timing wichtig, damit sie nicht stocken. Wer die Carbonara klassischer mag, kann die Sahne weglassen."
 ---
 
 ## Instructions
 
-1. **Prepare the Ingredients**: Beat the eggs in a bowl and mix in the grated Parmesan and Pecorino Romano cheeses. Add a generous amount of freshly ground black pepper. Set aside.
+1. **Zutaten vorbereiten**: Die Eier in einer Schüssel verquirlen und mit dem geriebenen Parmesan vermischen. Großzügig frisch gemahlenen schwarzen Pfeffer dazugeben und alles beiseitestellen.
 
-2. **Cook the Pasta**: Bring a large pot of salted water to a boil. Add the spaghetti and cook according to package directions until al dente. Reserve 1 cup of pasta cooking water before draining.
+2. **Pasta kochen**: Einen großen Topf mit gesalzenem Wasser zum Kochen bringen. Die Spaghetti nach Packungsanweisung al dente kochen. Vor dem Abgießen etwa 1 Tasse Nudelwasser auffangen.
 
-3. **Cook the Pancetta**: While the pasta is cooking, cut the pancetta into small cubes. In a large skillet over medium heat, cook the pancetta until crispy and golden brown, about 5-7 minutes. Remove from heat.
+3. **Speck anbraten**: Während die Pasta kocht, den Schinkenspeck in kleine Würfel schneiden. In einer großen Pfanne bei mittlerer Hitze anbraten, bis er knusprig und goldbraun ist. Danach die Pfanne vom Herd nehmen.
 
-4. **Combine Everything**: Add the hot drained pasta directly to the skillet with the pancetta. Toss to coat in the rendered fat. Remove the pan from heat.
+4. **Alles zusammenführen**: Die heißen, abgegossenen Spaghetti direkt in die Pfanne zum Speck geben und gut vermengen, damit sie das ausgelassene Fett aufnehmen.
 
-5. **Add the Egg Mixture**: Working quickly, pour the egg and cheese mixture over the hot pasta. Toss vigorously and continuously for about 1 minute. The residual heat will cook the eggs and create a creamy sauce. Add reserved pasta water, a little at a time, if needed to achieve a silky consistency.
+5. **Eimischung hinzufügen**: Zügig die Eier-Käse-Mischung über die heiße Pasta geben und alles kräftig verrühren. Die Resthitze sorgt für eine cremige Soße. Falls nötig, etwas vom aufgefangenen Nudelwasser nach und nach hinzufügen, bis die gewünschte Konsistenz erreicht ist.
 
-6. **Serve**: Serve immediately with extra grated cheese and black pepper on top.
+6. **Servieren**: Sofort servieren und nach Belieben mit zusätzlichem Käse und schwarzem Pfeffer bestreuen.

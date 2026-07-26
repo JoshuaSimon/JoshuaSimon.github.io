@@ -4,43 +4,43 @@ image: "/images/recipes/chicken-tikka-masala.svg"
 time: 60
 rating: 5
 ingredients:
-  - "800g boneless chicken breast, cut into chunks"
-  - "200g plain yogurt"
-  - "2 tablespoons lemon juice"
-  - "2 tablespoons garam masala"
-  - "1 tablespoon ground cumin"
-  - "1 tablespoon ground coriander"
-  - "1 teaspoon turmeric"
-  - "1 teaspoon paprika"
-  - "1 teaspoon cayenne pepper"
-  - "3 tablespoons butter"
-  - "1 large onion, finely chopped"
-  - "4 cloves garlic, minced"
-  - "2 tablespoons fresh ginger, grated"
-  - "400g canned tomatoes"
-  - "300ml heavy cream"
-  - "Fresh cilantro for garnish"
-  - "Salt to taste"
-notes: "Marinate the chicken for at least 2 hours, or overnight for the best flavor. Serve with basmati rice and naan bread."
+  - "800 g Hähnchenbrustfilet ohne Knochen, in Stücke geschnitten"
+  - "200 g Naturjoghurt"
+  - "2 EL Zitronensaft"
+  - "2 EL Garam Masala"
+  - "1 EL gemahlener Kreuzkümmel"
+  - "1 EL gemahlener Koriander"
+  - "1 TL Kurkuma"
+  - "1 TL Paprikapulver"
+  - "1 TL Cayennepfeffer"
+  - "3 EL Butter"
+  - "1 große Zwiebel, fein gehackt"
+  - "4 Knoblauchzehen, fein gehackt"
+  - "2 EL frischer Ingwer, gerieben"
+  - "400 g Dosentomaten"
+  - "300 ml Sahne"
+  - "Frischer Koriander zum Garnieren"
+  - "Salz nach Geschmack"
+notes: "Das Hähnchen mindestens 2 Stunden, am besten über Nacht, marinieren. Dazu passen Basmatireis und Naan-Brot besonders gut."
 ---
 
 ## Instructions
 
-1. **Marinate the Chicken**: In a large bowl, combine the yogurt, lemon juice, 1 tablespoon garam masala, cumin, coriander, turmeric, paprika, cayenne pepper, and 1 teaspoon salt. Mix well. Add the chicken chunks and toss to coat thoroughly. Cover and refrigerate for at least 2 hours, preferably overnight.
+1. **Hähnchen marinieren**: In einer großen Schüssel Joghurt, Zitronensaft, 1 EL Garam Masala, Kreuzkümmel, Koriander, Kurkuma, Paprikapulver, Cayennepfeffer und 1 TL Salz verrühren. Die Hähnchenstücke dazugeben und gründlich darin wenden. Abdecken und mindestens 2 Stunden, idealerweise über Nacht, im Kühlschrank ziehen lassen.
 
-2. **Cook the Chicken**: Preheat your grill or broiler to high heat. Thread the marinated chicken onto skewers (if using wooden skewers, soak them in water first). Grill the chicken for 10-12 minutes, turning occasionally, until lightly charred and cooked through. Remove from heat and set aside.
+2. **Hähnchen garen**: Grill oder Backofengrill auf hohe Hitze vorheizen. Das marinierte Hähnchen auf Spieße stecken. Falls Holzspieße verwendet werden, diese vorher in Wasser einweichen. Das Hähnchen 10–12 Minuten grillen und dabei gelegentlich wenden, bis es leicht gebräunt und durchgegart ist. Danach beiseitestellen.
 
-3. **Make the Sauce**: In a large skillet or pan, melt the butter over medium heat. Add the chopped onion and cook for 5-7 minutes until soft and golden. Add the minced garlic and grated ginger. Cook for another 2 minutes until fragrant, stirring constantly to prevent burning.
+3. **Soße zubereiten**: In einer großen Pfanne die Butter bei mittlerer Hitze schmelzen. Die gehackte Zwiebel darin 5–7 Minuten weich und goldgelb anbraten. Dann Knoblauch und Ingwer hinzufügen und unter ständigem Rühren weitere 2 Minuten mitbraten.
 
-4. **Add Tomatoes and Spices**: Add the canned tomatoes and the remaining tablespoon of garam masala. Break up the tomatoes with your spoon. Simmer for 10 minutes until the sauce thickens slightly. For a smoother sauce, use an immersion blender to puree the mixture, or transfer to a blender and blend until smooth. Return to the pan.
+4. **Tomaten und Gewürze hinzufügen**: Dosentomaten und den restlichen EL Garam Masala dazugeben. Die Tomaten mit dem Kochlöffel etwas zerkleinern. Alles etwa 10 Minuten köcheln lassen, bis die Soße leicht eindickt. Für eine besonders glatte Soße kann die Mischung mit einem Stabmixer püriert und anschließend zurück in die Pfanne gegeben werden.
 
-5. **Add Cream and Chicken**: Reduce heat to low and stir in the heavy cream. Season with salt to taste. Let the sauce simmer for 5 minutes. Remove the chicken from the skewers and add to the sauce. Stir gently to coat the chicken. Simmer for another 5-10 minutes to allow the flavors to meld.
+5. **Sahne und Hähnchen ergänzen**: Die Hitze reduzieren und die Sahne einrühren. Mit Salz abschmecken und die Soße weitere 5 Minuten köcheln lassen. Das Hähnchen von den Spießen nehmen, in die Soße geben und vorsichtig unterheben. Noch einmal 5–10 Minuten sanft köcheln lassen, damit sich die Aromen verbinden.
 
-6. **Serve**: Garnish with fresh cilantro and serve hot with basmati rice and warm naan bread.
+6. **Servieren**: Mit frischem Koriander garnieren und heiß mit Basmatireis und warmem Naan-Brot servieren.
 
 ## Tips
 
-- For a smokier flavor, add a small piece of charcoal to the pan: heat it until red hot, place it in a small bowl in the center of the curry, drizzle with ghee, cover immediately, and let smoke for 2-3 minutes
-- Adjust the spice level by increasing or decreasing the cayenne pepper
-- Kasuri methi (dried fenugreek leaves) can be added for extra authenticity
-- The sauce can be made ahead and reheated when ready to serve
+- Für ein rauchigeres Aroma kann ein kleines Stück Holzkohle erhitzt, in einer feuerfesten Schale in die Mitte des Currys gestellt, mit etwas Ghee beträufelt und das Gericht kurz abgedeckt werden.
+- Die Schärfe lässt sich über die Menge an Cayennepfeffer gut anpassen.
+- Kasuri Methi (getrocknete Bockshornkleeblätter) sorgen für noch mehr Authentizität.
+- Die Soße kann gut vorbereitet und später einfach wieder aufgewärmt werden.

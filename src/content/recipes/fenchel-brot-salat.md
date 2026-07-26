@@ -20,8 +20,8 @@ notes: "Für 2 Personen. Vegetarisch. Ca. 831 kcal pro Portion. Originalrezept v
 
 ## Instructions
 
-1. **Ofen vorheizen & Gemüse schneiden**: Den Backofen auf 220°C Ober-/Unterhitze vorheizen. Karotten schälen, der Länge nach vierteln und in gleichmäßig dicke, ca. 5 cm lange Stücke schneiden. Fenchel vierteln, den Strunk entfernen und in feine Streifen schneiden. Rote Zwiebel in dünne Spalten schneiden.
-2. **Gemüse backen**: Fenchel, Karotten und Zwiebelpalten auf einem mit Backpapier belegten Backblech verteilen. Mit 1 EL Öl, Salz und Pfeffer vermengen. Im Ofen ca. 25 Minuten backen, bis das Gemüse weich und leicht geröstet ist.
+1. **Ofen vorheizen & Gemüse schneiden**: Den Backofen auf 220 °C Ober-/Unterhitze vorheizen. Karotten schälen, der Länge nach vierteln und in gleichmäßig dicke, ca. 5 cm lange Stücke schneiden. Fenchel vierteln, den Strunk entfernen und in feine Streifen schneiden. Die rote Zwiebel in dünne Spalten schneiden.
+2. **Gemüse backen**: Fenchel, Karotten und Zwiebelspalten auf einem mit Backpapier belegten Backblech verteilen. Mit 1 EL Öl, Salz und Pfeffer vermengen. Im Ofen ca. 25 Minuten backen, bis das Gemüse weich und leicht geröstet ist.
 3. **Brotwürfel vorbereiten**: Fladenbrot in ca. 2 cm große Würfel schneiden und in eine große Schüssel geben. Knoblauch abziehen und direkt zu den Brotwürfeln pressen. Mit 3 EL Öl und der Gewürzmischung vermengen. Auf einem zweiten mit Backpapier belegten Backblech verteilen und ca. 10 Minuten vor Ende der Gemüse-Backzeit mit in den Ofen schieben, bis die Würfel goldbraun und knusprig sind.
 4. **Dressing zubereiten**: Die große Schüssel kurz auswischen. Naturjoghurt und Senf darin verrühren und mit Salz und Pfeffer abschmecken. Salatherz in ca. 1 cm breite Streifen schneiden und zum Dressing in die Schüssel geben.
 5. **Salat fertigstellen**: Das gebackene Gemüse und die knusprigen Brotwürfel aus dem Ofen nehmen. Beides in der großen Schüssel zu den Salatstreifen und dem Dressing geben und alles gut vermengen.
