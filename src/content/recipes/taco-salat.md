@@ -1,6 +1,6 @@
 ---
 title: "Mexikanischer Taco-Salat"
-image: "/images/recipes/tacco-salat.png"
+image: "/images/recipes/taco-salat.png"
 time: 45
 rating: 4.5
 ingredients:

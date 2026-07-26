@@ -1,6 +1,6 @@
 ---
 title: "Hähnchen-Geschnetzeltes in Weißweinsoße mit Ofenkartoffeln und Bohnen"
-image: "/images/recipes/haenchen-weisswein-kartoffel.png"
+image: "/images/recipes/haehnchen-weisswein-kartoffel.png"
 time: 90
 rating: 5.0
 ingredients:
